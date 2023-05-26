@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { UiNavbarModule } from '@esoft7s/main/ui-navbar';
+import { UiContentModule } from '@esoft7s/main/ui-content';
 import { featureShellRoutes } from './feature-shell.routes';
 import { FeatureShellContainer } from './feature-shell.container';
 
@@ -9,6 +10,7 @@ import { FeatureShellContainer } from './feature-shell.container';
   imports: [
     CommonModule,
     UiNavbarModule,
+    UiContentModule,
     RouterModule.forChild(featureShellRoutes),
   ],
   declarations: [FeatureShellContainer],
