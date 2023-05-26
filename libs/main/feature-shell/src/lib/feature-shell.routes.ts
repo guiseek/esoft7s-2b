@@ -2,6 +2,7 @@ import { Route } from '@angular/router';
 import { FeatureShellContainer } from './feature-shell.container';
 
 export const featureShellRoutes: Route[] = [
+
   {
     path: '',
     component: FeatureShellContainer,
@@ -16,6 +17,13 @@ export const featureShellRoutes: Route[] = [
         loadChildren: () =>
           import('@esoft7s/search/feature-search').then(
             (m) => m.FeatureSearchModule
+          ),
+      },
+      {
+        path: 'collection',
+        loadChildren: () =>
+          import('@esoft7s/collection/feature-collection').then(
+            (m) => m.FeatureCollectionModule
           ),
       },
     ],

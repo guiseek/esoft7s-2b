@@ -15,6 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@esoft7s/collection/feature-collection": [
+        "libs/collection/feature-collection/src/index.ts"
+      ],
       "@esoft7s/main/feature-home": ["libs/main/feature-home/src/index.ts"],
       "@esoft7s/main/feature-shell": ["libs/main/feature-shell/src/index.ts"],
       "@esoft7s/main/ui-content": ["libs/main/ui-content/src/index.ts"],
