@@ -30,7 +30,8 @@
       "@esoft7s/search/domain": ["libs/search/domain/src/index.ts"],
       "@esoft7s/search/feature-search": [
         "libs/search/feature-search/src/index.ts"
-      ]
+      ],
+      "@esoft7s/shared/data-access": ["libs/shared/data-access/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
