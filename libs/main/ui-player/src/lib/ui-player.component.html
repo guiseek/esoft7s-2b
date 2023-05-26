@@ -1,1 +1,36 @@
 <p>ui-player works!</p>
+
+<audio #audioRef src="assets/audio/interstellar.mp3"></audio>
+
+<menu>
+  <button disabled>
+    <svg width="24" height="24">
+      <use href="assets/icons.svg#skip-prev"></use>
+    </svg>
+  </button>
+  <button (click)="play()">
+    <svg width="24" height="24">
+      <use
+        [attr.href]="
+          (paused$ | async) ? 'assets/icons.svg#play' : 'assets/icons.svg#pause'
+        "
+      ></use>
+    </svg>
+  </button>
+  <button disabled>
+    <svg width="24" height="24">
+      <use href="assets/icons.svg#skip-next"></use>
+    </svg>
+  </button>
+  <button [disabled]="paused$ | async" (click)="mute()">
+    <svg width="24" height="24">
+      <use
+        [attr.href]="
+          (muted$ | async)
+            ? 'assets/icons.svg#volume-off'
+            : 'assets/icons.svg#volume-up'
+        "
+      ></use>
+    </svg>
+  </button>
+</menu>

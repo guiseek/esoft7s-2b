@@ -1,0 +1,32 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 16px;
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 8px;
+    background-color: transparent;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    fill: #333;
+
+    cursor: pointer;
+    &:hover {
+      background-color: #eaeaea;
+    }
+  }
+
+  button[disabled] {
+    opacity: .5;
+  }
+}
