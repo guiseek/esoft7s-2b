@@ -5,6 +5,12 @@ export const featureShellRoutes: Route[] = [
   {
     path: '',
     component: FeatureShellContainer,
-    children: []
-  }
+    children: [
+      {
+        path: '',
+        loadChildren: () =>
+          import('@esoft7s/main/feature-home').then((m) => m.FeatureHomeModule),
+      },
+    ],
+  },
 ];
