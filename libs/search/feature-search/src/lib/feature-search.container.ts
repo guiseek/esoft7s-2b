@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { searchDataAccess } from '@esoft7s/search/data-access';
 
 @Component({
   selector: 'esoft7s-feature-search',
@@ -6,4 +7,8 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styleUrls: ['./feature-search.container.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class FeatureSearchContainer {}
+export class FeatureSearchContainer {
+  constructor() {
+    console.log(searchDataAccess());
+  }
+}

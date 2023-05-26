@@ -26,6 +26,7 @@
       "@esoft7s/main/feature-shell": ["libs/main/feature-shell/src/index.ts"],
       "@esoft7s/main/ui-content": ["libs/main/ui-content/src/index.ts"],
       "@esoft7s/main/ui-navbar": ["libs/main/ui-navbar/src/index.ts"],
+      "@esoft7s/search/data-access": ["libs/search/data-access/src/index.ts"],
       "@esoft7s/search/domain": ["libs/search/domain/src/index.ts"],
       "@esoft7s/search/feature-search": [
         "libs/search/feature-search/src/index.ts"
