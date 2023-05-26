@@ -15,6 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@esoft7s/collection/data-access": [
+        "libs/collection/data-access/src/index.ts"
+      ],
       "@esoft7s/collection/domain": ["libs/collection/domain/src/index.ts"],
       "@esoft7s/collection/feature-collection": [
         "libs/collection/feature-collection/src/index.ts"

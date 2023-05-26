@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { collectionDataAccess } from '@esoft7s/collection/data-access';
 
 @Component({
   selector: 'esoft7s-feature-collection',
@@ -6,4 +7,8 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styleUrls: ['./feature-collection.container.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class FeatureCollectionContainer {}
+export class FeatureCollectionContainer {
+  constructor() {
+    console.log(collectionDataAccess());
+  }
+}
