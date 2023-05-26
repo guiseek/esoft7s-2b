@@ -11,6 +11,13 @@ export const featureShellRoutes: Route[] = [
         loadChildren: () =>
           import('@esoft7s/main/feature-home').then((m) => m.FeatureHomeModule),
       },
+      {
+        path: 'search',
+        loadChildren: () =>
+          import('@esoft7s/search/feature-search').then(
+            (m) => m.FeatureSearchModule
+          ),
+      },
     ],
   },
 ];
