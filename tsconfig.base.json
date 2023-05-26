@@ -31,7 +31,8 @@
       "@esoft7s/search/feature-search": [
         "libs/search/feature-search/src/index.ts"
       ],
-      "@esoft7s/shared/data-access": ["libs/shared/data-access/src/index.ts"]
+      "@esoft7s/shared/data-access": ["libs/shared/data-access/src/index.ts"],
+      "@esoft7s/shared/util-core": ["libs/shared/util-core/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
