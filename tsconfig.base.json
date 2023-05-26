@@ -22,6 +22,11 @@
       "@esoft7s/collection/feature-collection": [
         "libs/collection/feature-collection/src/index.ts"
       ],
+      "@esoft7s/dx/feature-dashboard": [
+        "libs/dx/feature-dashboard/src/index.ts"
+      ],
+      "@esoft7s/dx/feature-docs": ["libs/dx/feature-docs/src/index.ts"],
+      "@esoft7s/dx/feature-shell": ["libs/dx/feature-shell/src/index.ts"],
       "@esoft7s/main/feature-home": ["libs/main/feature-home/src/index.ts"],
       "@esoft7s/main/feature-shell": ["libs/main/feature-shell/src/index.ts"],
       "@esoft7s/main/ui-content": ["libs/main/ui-content/src/index.ts"],
