@@ -7,8 +7,9 @@ import { LOCALE_ID } from '@angular/core';
 
 export const appProviders = () => {
 
-  const { infrastructure } = sharedDataAccess();
+  const { infrastructure, application } = sharedDataAccess();
   register(...infrastructure);
+  register(...application);
 
   registerLocaleData(pt, 'pt-BR', ptBR);
   return [{ provide: LOCALE_ID, useValue: 'pt-BR' }, ...transfer()];

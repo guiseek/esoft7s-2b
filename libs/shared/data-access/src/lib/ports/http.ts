@@ -7,7 +7,7 @@ export abstract class Http<T = unknown> {
     method: string,
     path: string,
     data?: T | D
-  ): Observable<R>;
+  ): Observable<R>
 
   get<R>(path: string) {
     return this.request<R>('GET', path);
